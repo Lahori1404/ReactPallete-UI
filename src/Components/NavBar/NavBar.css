@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap');
+
+
+
+:root{
+    --primar-color:#ffa600ef;
+    --secondary-color:#fff;
+    --background-color:#1a1a1a;
+}
+
+.NavBar{
+    margin: -0.5rem;
+    background-color: var(--background-color);
+    z-index: 2;
+}
+
+.NavContainer{
+    height: 70px;
+    background-color:var(--background-color);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-size: 1rem;
+    position: sticky;
+    top: 0;
+    font-family: 'Mulish', sans-serif;
+    z-index: 10;
+
+}
+
+.Nav-logo{
+
+    font-family: 'Mulish', sans-serif;
+    margin-left: 30px;
+    cursor: pointer;
+    color: #ffffff;
+
+}
+
+.NavMenu{
+    display: flex;
+    justify-content: space-around;
+    min-width: 60%;
+
+}
+
+
+.NavLinks{
+
+display: flex;
+justify-content: space-evenly;
+min-width: 60%;
+align-items: center;
+color: white;
+font-family: 'Teko', sans-serif;
+list-style: none;
+
+}
+
+.NavLinks a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: white;
+    padding-bottom: 24px;
+    transition: 200ms ease-in-out;
+    
+}
+
+
+.NavBtn button{
+
+    text-decoration: none;
+    padding: 10px 26px;
+    font-family: 'Mulish', sans-serif;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: 3px solid var(--primar-color);
+    cursor: pointer;
+    border-radius: 2px;
+    transition: 200ms ease-in-out;
+    background-color: var(--primar-color);
+}
+
+.NavBtn button:hover{
+
+    background-color:var(--background-color);
+    color: var(--primar-color);
+    font-weight: 600;
+    transition: 200ms ease-in-out;
+}
+
+.NavLinks a:hover,
+.NavLinks a:active{
+    border-bottom: 4px solid var(--primar-color);
+    color: var(--primar-color);
+}
+
+.Nav-icon{
+
+display: block;
+position: absolute;
+top: 1rem;
+font-size: 2rem;
+right:1rem;
+z-index: 999;
+color: white;
+cursor: pointer;
+
+}
+
+@media screen and (min-width:768px) {
+    .Nav-icon{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    
+.NavMenu{
+    display: none;
+}
+
+}
+
+.sidebar-active{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200vh;
+    background-color: var(--background-color);
+}
+.sidebar-active .NavLinks{
+    
+    display: flex;
+    min-height: 40%;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 5rem;
+    
+
+}

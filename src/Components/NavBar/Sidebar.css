@@ -1,0 +1,49 @@
+.sidebar{
+
+position: absolute;
+top: -100%;
+height: 100vh;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+z-index: 990;
+background-color: #1a1a1a;
+transition: 500ms ease-in-out;
+
+}
+
+.sideBarcontainer{
+
+
+position: relative;
+top: 4rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+font-size: 1.4rem;
+
+}
+
+.sideLinks li{
+    
+list-style: none;
+margin-bottom: 2rem;
+text-decoration: none;
+
+}
+
+.sideLinks a{
+    display: flex;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+    text-decoration: none;
+    transition: 200ms ease-in-out;
+}
+
+.sideLinks a:hover{
+    color: #ffa600ef;
+    transition: 200ms ease-in-out;
+}
+

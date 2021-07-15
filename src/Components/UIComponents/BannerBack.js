@@ -13,7 +13,7 @@ function BannerBack() {
 <div className="banner-content">
 <div className="banner-left">
     <div className="banner-left-header">
-        <h1>We are the community</h1>
+        <h1>We are the Community!</h1>
         <p>A family where we work together, grow together and most importanly have fun together.</p>
         <Butt Bcolor = 'transparent' textColor = '#fff' borderC = '#fff' text = 'Learn More'></Butt>
     </div>

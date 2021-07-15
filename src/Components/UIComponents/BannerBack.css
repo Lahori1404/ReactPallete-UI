@@ -128,14 +128,15 @@ height: 100vh;
 
 .banner-right,.banner-left{
 
-    margin: 3rem;
-    width: 50%;
+    margin: 1rem 3rem;
 
 }
 
+
+
 .banner-left-header{
 
-display: block;
+display: inline-block;
 color: white;
 justify-content: left;
 text-align: left;
@@ -156,14 +157,14 @@ text-align: left;
     font-family: 'Lato', sans-serif;
     font-size: 1.2rem;
     color: white;
-    margin-bottom: 2rem;
     max-width: 28rem;
+    margin-bottom: 2rem;
 
 }
 
 .banner-right img{
 
-    width: 85%;
+    width: 35rem;
     
 
 }
@@ -173,20 +174,35 @@ text-align: left;
 @media screen and (max-width:768px) {
     
 
-h1{
-  font-size: 10px;
+
+  .banner-content{
+
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content:center;
+    top: -2rem;
 }
 
-    .banner-content{
+  .banner-left-header{
 
-        flex-direction: column-reverse;
-        justify-content:center;
-        top: -2rem;
-    }
 
+    
+    justify-content: center;
+    text-align: center;
+         
+  }
+
+  .banner-left-header h1{
+
+text-align: center;
+} 
+   
     .banner-right img{
-      width: 120%;
+      width: 80%;
     }
 
+    .banner-right,.banner-left{
+      margin: 1rem;
+    }
 
 }

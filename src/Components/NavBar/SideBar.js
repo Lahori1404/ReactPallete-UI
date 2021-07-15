@@ -5,7 +5,7 @@ function SideBar(props) {
     return (
 
 
-        <div className = "sidebar" style = {{top:`${props.active ? "0":"-100%"}`}}>
+        <div className = "sidebar" style = {{top:`${props.active ? "0":"-110%"}`}}>
             <div className="sideBarcontainer">
             <div className="sideLinks">                
                     <li><a href="home">Home</a></li>

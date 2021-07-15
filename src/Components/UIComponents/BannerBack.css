@@ -1,0 +1,199 @@
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 48px;
+}
+p {
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+  font-size: 14px;
+  color: #333333;
+}
+
+.header {
+  position: relative;
+  top:-5rem;
+  text-align: center;
+  background: linear-gradient(
+    60deg,
+    rgb(56, 109, 209) 0%,
+    rgb(131, 101, 201) 100%
+  );
+  color: white;
+}
+.logo {
+  width: 50px;
+  fill: white;
+  padding-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.inner-header {
+
+  height: 90vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 20vh;
+  margin-bottom: -7px; /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.content {
+  position: relative;
+  height: 5vh;
+  text-align: center;
+  background-color: white;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+
+.inner-header{
+  height: 120vh;
+}
+
+
+  .waves {
+    height: 90px;
+    min-height: 60px;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+}
+
+.BannerContainer{
+
+    position: relative;
+    top: 3rem;
+}
+
+.banner-content{
+
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+padding: 0 20px;
+}
+
+.banner-right,.banner-left{
+
+    margin: 3rem;
+    width: 50%;
+
+}
+
+.banner-left-header{
+
+display: block;
+color: white;
+justify-content: left;
+text-align: left;
+
+}
+
+.banner-left-header h1{
+
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+}
+
+.banner-left-header p{
+
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 2rem;
+    max-width: 28rem;
+
+}
+
+.banner-right img{
+
+    width: 85%;
+    
+
+}
+
+
+
+@media screen and (max-width:768px) {
+    
+
+h1{
+  font-size: 10px;
+}
+
+    .banner-content{
+
+        flex-direction: column-reverse;
+        justify-content:center;
+        top: -2rem;
+    }
+
+    .banner-right img{
+      width: 120%;
+    }
+
+
+}

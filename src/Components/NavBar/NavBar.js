@@ -23,7 +23,7 @@ const NavbarHandler = () =>{
     {activeNavbar ? <FaTimes/>:<FaBars/>}
 </div>
           <div className="NavContainer">
-              <div className="Nav-logo"><h1>Pesa</h1></div>
+              <div className="Nav-logo"><h1>StartUpply</h1></div>
              
 
                   <div className="NavMenu">

@@ -1,40 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 :root{
-    --primar-color:#ffa600ef;
+    --primar-color:#006eff;
     --secondary-color:#fff;
-    --background-color:#1a1a1a;
+    --background-color:rgb(46, 46, 46);
 }
 
 .NavBar{
-    margin: -0.5rem;
-    background-color: var(--background-color);
-    z-index: 2;
+    background-color:transparent;
+    font-family: 'Mulish', sans-serif;
+
 }
 
 .NavContainer{
-    height: 70px;
-    background-color:var(--background-color);
+    height: 80px;
     display: flex;
     justify-content:space-between;
     align-items: center;
     font-size: 1rem;
     position: sticky;
     top: 0;
-    font-family: 'Mulish', sans-serif;
     z-index: 10;
 
 }
 
-.Nav-logo{
+.Nav-logo h1{
 
-    font-family: 'Mulish', sans-serif;
     margin-left: 30px;
+    font-family:'Roboto';
+    font-weight: bold;
     cursor: pointer;
-    color: #ffffff;
-
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.822);
 }
 
 .NavMenu{
@@ -51,7 +49,7 @@ display: flex;
 justify-content: space-evenly;
 min-width: 60%;
 align-items: center;
-color: white;
+color:white;
 font-family: 'Teko', sans-serif;
 list-style: none;
 
@@ -60,10 +58,9 @@ list-style: none;
 .NavLinks a{
     text-decoration: none;
     font-size: 1.1rem;
-    color: white;
-    padding-bottom: 24px;
-    transition: 200ms ease-in-out;
-    
+    color:rgba(255, 255, 255, 0.918);
+    padding-bottom: 15px;
+    transition: 200ms ease-out;
 }
 
 
@@ -72,28 +69,29 @@ list-style: none;
     text-decoration: none;
     padding: 10px 26px;
     font-family: 'Mulish', sans-serif;
-    color: white;
     font-size: 1.2rem;
     font-weight: 500;
-    border: 3px solid var(--primar-color);
+    border: 2px solid rgba(255, 255, 255, 0.856);
+    color: rgba(255, 255, 255, 0.89);
     cursor: pointer;
-    border-radius: 2px;
+    background: transparent;
+    border-radius: 1px;
     transition: 200ms ease-in-out;
-    background-color: var(--primar-color);
 }
 
 .NavBtn button:hover{
 
-    background-color:var(--background-color);
-    color: var(--primar-color);
+    color: white;
+    border: 3px solid white;
     font-weight: 600;
     transition: 200ms ease-in-out;
+    transform: translateY(2px);
+    box-shadow: 0px 15px 20px rgba(0, 37, 107, 0.391);
 }
 
 .NavLinks a:hover,
 .NavLinks a:active{
-    border-bottom: 4px solid var(--primar-color);
-    color: var(--primar-color);
+    border-bottom: 3px solid white;
 }
 
 .Nav-icon{
@@ -120,6 +118,10 @@ cursor: pointer;
     
 .NavMenu{
     display: none;
+}
+.Nav-logo h1{
+    font-family: 'Roboto';
+    font-weight: 700;
 }
 
 }
